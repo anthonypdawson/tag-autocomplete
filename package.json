@@ -9,16 +9,34 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonypdawson/tag-autocomplete.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anthonypdawson/tag-autocomplete/issues"
+  },
+  "homepage": "https://github.com/anthonypdawson/tag-autocomplete#readme",
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-      "command": "tagAutocomplete.selectTagsYaml",
-      "title": "Select tags.yaml for Tag Autocomplete"
+        "command": "tagAutocomplete.selectTagsYaml",
+        "title": "Select tags.yaml for Tag Autocomplete"
       }
     ]
   },
+  "keywords": [
+    "jekyll",
+    "tags",
+    "autocomplete",
+    "markdown",
+    "yaml"
+  ],
+  "publisher": "anthonypdawson",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
